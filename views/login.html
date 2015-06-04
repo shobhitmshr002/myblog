@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Login</title>
+    <style type="text/css">
+        .label {text-align: right}
+        .error {color: red}
+    </style>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
+    <script src="ie-emulation-modes-warning.js"></script>
+
+</head>
+<body>
+<div class="container">
+
+    <form class="form-signin" method="post">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus=""
+               name="username" value="{{username}}">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" name="password" value="">
+        <div class="error">
+            {{login_error}}
+
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <input class="btn btn-lg btn-primary btn-block" type="submit">
+    </form>
+
+</div>
+<script src="ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
